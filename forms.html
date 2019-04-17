@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>forms</title>
+    <script type="text/JavaScript">
+        function showMessage(){
+            var message = document.getElementById("name").value;
+            display_message.innerHTML= message;
+	    var message = document.getElementById("age").value;
+            display_message.innerHTML= message;
+	    var message = document.getElementById("email").value;
+            display_message.innerHTML= message;
+        }
+	 `
+    </script>
+</head>
+<body>
+<h1 style="color:red"> Hello ASPIRANT </h1>
+<form>
+NAME:<br>
+<input id="name" type="text" name="name" id="name">
+  <br>
+  AGE:<br>
+  <input id="age" type="number" name="number" id="age">
+  <br>
+  EMAIL:<br>
+  <input id="email" type="text" name="email" id="email">
+  <br>
+
+<input type="button" onclick="showMessage()" value="submit" />
+</form>
+<p> <span id = "display_message"></span> </p>
+</body>
+</html>
